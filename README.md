@@ -40,7 +40,7 @@ Bước 7: Chạy code trong mục “Initialize model” để khởi tạo mô
 
 Bước 8: Chạy code trong mục “Train a Nerfies!” để huấn luyện mô hình. Khi gặp lỗi sau: “AttributeError: module 'jax' has no attribute 'tree_multimap'” thì ấn vào đường dẫn “/usr/local/lib/python3.9/dist-packages/nerfies/evaluation.py” trong truy xuất lỗi của hệ thống. Sau đó, file evaluation.py cùng với dòng lỗi sẽ hiện ra. Sửa lại dòng lỗi như sau: “ ret_map = jax.tree_map(lambda x: utils.unshard(x, padding), ret_map)” , sau đó lưu bằng cách ấn Ctrl + S, khởi động lại thời gian chạy và chạy lại code của các mục trước đó của notebook.
 
-Chạy file notebook “Nerfies_Training_v2.ipynb” để huấn luyện mô hình trên tập dữ liệu.
+Chạy file notebook “Nerfies Render Video v2.ipynb” để chạy mô hình và hiển thị kết quả.
 -------------------------------------------------------------------------------
 Bước 1: Chạy code trong mục “Environment Setup” để cài đặt các thư viện cần thiết. Cần đảm bảo các thư viện flax có phiên bản 0.5.3, jax và jaxlib đều có phiên bản 0.4.6.  Khởi động lại thời gian chạy nếu được yêu cầu. 
 
